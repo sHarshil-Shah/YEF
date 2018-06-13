@@ -4,7 +4,6 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,12 +24,10 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        Log.d("mainActivity2", "main2 on click");
+        Log.d("mainActivity2", "In main2");
 
-
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        (Objects.requireNonNull(getSupportActionBar())).setDisplayHomeAsUpEnabled(true);
         Log.d("mainActivity2", "after back button");
-
 
         /*ListAdapter myAdapter = new customAdapter(this,names);
         ListView myListView = findViewById(R.id.myListView);

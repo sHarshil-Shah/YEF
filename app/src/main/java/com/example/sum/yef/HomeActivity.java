@@ -24,6 +24,6 @@ public class HomeActivity extends AppCompatActivity {
                 Log.d("mainActivityHome", "Going for mainActivity");
                 finish();
             }
-        },2000);
+        },1500);
     }
 }
