@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="78" />
+                                                <entry key="scalingPercent" value="98" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -35,8 +35,8 @@
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
                                       <entry key="foregroundImage" value="E:\Internship\Mobile App Development NGO\logo.png" />
-                                      <entry key="foregroundLayerName" value="ic_launcher_foreground" />
-                                      <entry key="outputName" value="loho" />
+                                      <entry key="foregroundLayerName" value="ic_yef_logo" />
+                                      <entry key="outputName" value="about" />
                                     </map>
                                   </option>
                                 </PersistentState>
