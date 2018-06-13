@@ -4,18 +4,6 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@mipmap/loho"
-            android:title="1" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_launcher_background"
-            android:title="2" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@mipmap/loho_round"
-            android:title="3" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@mipmap/ic_launcher_round"
-            android:title="4" />
+            android:title="About Us" />
     </group>
 </menu>
