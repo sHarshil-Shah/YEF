@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, Main2Activity.class);
                 startActivity(i);
-                Log.d("mainActivity", "Going in mainactivity2");
+                Log.d("mainActivity", "Going in main Activity 2");
             }
         });
     }
