@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setHomeAsUpIndicator(R.mipmap.loho_round);
+        actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
 
 
         NavigationView navigationView = findViewById(R.id.nav_view);

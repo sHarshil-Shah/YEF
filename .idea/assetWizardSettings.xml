@@ -13,6 +13,20 @@
                       <PersistentState>
                         <option name="children">
                           <map>
+                            <entry key="actionbar">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="E:\Internship\Mobile App Development NGO\logo.png" />
+                                      <entry key="outputName" value="ic_action_yef_logo" />
+                                      <entry key="theme" value="CUSTOM" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
                             <entry key="launcher">
                               <value>
                                 <PersistentState>
@@ -23,7 +37,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="98" />
+                                                <entry key="scalingPercent" value="80" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -35,8 +49,8 @@
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
                                       <entry key="foregroundImage" value="E:\Internship\Mobile App Development NGO\logo.png" />
-                                      <entry key="foregroundLayerName" value="ic_yef_logo" />
-                                      <entry key="outputName" value="about" />
+                                      <entry key="foregroundLayerName" value="ic_yef_logo_forground" />
+                                      <entry key="outputName" value="ic_yef_logo" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -5,11 +5,11 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
-        android:logo="@mipmap/loho_round"
+        android:logo="@mipmap/ic_yef_logo_round"
         android:allowBackup="true"
-        android:icon="@mipmap/loho_round"
+        android:icon="@mipmap/ic_yef_logo_round"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/loho_round"
+        android:roundIcon="@mipmap/ic_yef_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
