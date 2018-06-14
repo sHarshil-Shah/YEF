@@ -26,10 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".about"
+        <activity android:name=".Main3Activity"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme"
-            android:label="About us"/>
+            android:label="About Us"/>
     </application>
 
 </manifest>

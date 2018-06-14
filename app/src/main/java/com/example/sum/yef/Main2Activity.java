@@ -28,8 +28,6 @@ public class Main2Activity extends AppCompatActivity {
         (Objects.requireNonNull(getSupportActionBar())).setDisplayHomeAsUpEnabled(true);
         Log.d("mainActivity2", "after back button");
 
-        Log.d("mainActivity2", "after add back button");
-
         Button btnCall = findViewById(R.id.btn_call);
         btnCall.setOnClickListener(listen);
 
