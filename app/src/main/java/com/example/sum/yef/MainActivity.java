@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, Main3Activity.class);
                 startActivity(i);
-                Log.d("mainActivity", "Going in main Activity 3");
+                Log.d("mainActivity", "Going in main Activity 3 about us activity");
             }
         });
     }
