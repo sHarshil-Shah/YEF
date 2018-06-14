@@ -18,7 +18,6 @@ import java.util.Objects;
 public class Main2Activity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,15 +28,10 @@ public class Main2Activity extends AppCompatActivity {
         (Objects.requireNonNull(getSupportActionBar())).setDisplayHomeAsUpEnabled(true);
         Log.d("mainActivity2", "after back button");
 
-        /*ListAdapter myAdapter = new customAdapter(this,names);
-        ListView myListView = findViewById(R.id.myListView);
-        myListView.setAdapter(myAdapter);*/
-
         Log.d("mainActivity2", "after add back button");
 
         Button btnCall = findViewById(R.id.btn_call);
         btnCall.setOnClickListener(listen);
-
 
         Log.d("mainActivity2", "call button");
     }

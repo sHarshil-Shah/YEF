@@ -32,12 +32,23 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
+                                      <entry key="backgroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="106" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="foregroundImage">
                                         <value>
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="80" />
+                                                <entry key="scalingPercent" value="130" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -48,9 +59,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="E:\Internship\Mobile App Development NGO\logo.png" />
-                                      <entry key="foregroundLayerName" value="ic_yef_logo_forground" />
-                                      <entry key="outputName" value="ic_yef_logo" />
+                                      <entry key="foregroundImage" value="E:\Internship\Mobile App Development NGO\youtube.png" />
+                                      <entry key="foregroundLayerName" value="ic_youtube_logo" />
+                                      <entry key="outputName" value="ic_youtube" />
                                     </map>
                                   </option>
                                 </PersistentState>
