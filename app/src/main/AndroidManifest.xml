@@ -32,6 +32,14 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme"
             android:label="About Us"/>
+
+        <receiver android:name="txtlistner">
+            <intent-filter>
+                <action android:name="Reply_Clicked"></action>
+                <action android:name="Close_Clicked"></action>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
