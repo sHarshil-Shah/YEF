@@ -12,11 +12,13 @@
         android:roundIcon="@mipmap/ic_yef_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".Main2Activity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:label="Donor Information"/>
         <activity
             android:name=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">

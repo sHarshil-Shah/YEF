@@ -1,21 +1,15 @@
 package com.example.sum.yef;
 
 import android.content.Intent;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ActionBarDrawerToggle nToggle;
-    Button btn_about;
 
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -24,17 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("mainActivity", "In main activity on create");
 
-        DrawerLayout mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        nToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
-        mDrawerLayout.addDrawerListener(nToggle);
-        nToggle.syncState();
-
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
+        actionbar.setHomeAsUpIndicator(R.mipmap.ic_yef_logo_round);
 
         Button mButton = findViewById(R.id.button);
         mButton.setOnClickListener(new View.OnClickListener() {
@@ -53,16 +39,5 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("mainActivity", "Going in main Activity 3 about us activity");
             }
         });
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        Log.d("mainActivity", "on option item select");
-
-        if(nToggle.onOptionsItemSelected(item)){
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }
