@@ -116,6 +116,13 @@
             android:layout_centerHorizontal="true"
             android:text="Notify All"
             android:textSize="18dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_input_add" />
     </LinearLayout>
 
 </LinearLayout>

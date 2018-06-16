@@ -13,12 +13,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 import android.widget.RemoteViews;
 import android.widget.TextView;
 
 import java.util.Objects;
+
+
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -27,6 +27,7 @@ public class Main2Activity extends AppCompatActivity {
     private int notification_id;
     private RemoteViews remoteViews;
     private Context context;
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,11 +58,15 @@ public class Main2Activity extends AppCompatActivity {
         PendingIntent pendingIntent=PendingIntent.getBroadcast(context,123,txtintent,0);
         remoteViews.setOnClickPendingIntent(R.id.btnreply,pendingIntent);
 
-
         pendingIntent = PendingIntent.getBroadcast(context, 123, closeintent, 0);
         remoteViews.setOnClickPendingIntent(R.id.btnclose,pendingIntent);
 
+        findViewById(R.id.btn_add).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
 
         findViewById(R.id.btnnotify).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,8 +81,7 @@ public class Main2Activity extends AppCompatActivity {
                 notificationManager.notify(notification_id,builder.build());
             }
         });
-
-    }
+        }
 
     private View.OnClickListener listen = new View.OnClickListener() {
         public void onClick(View v) {
@@ -107,3 +111,4 @@ public class Main2Activity extends AppCompatActivity {
         }
     }
 }
+
