@@ -11,14 +11,18 @@ import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.PopupWindow;
 import android.widget.RemoteViews;
+import android.widget.Spinner;
 import android.widget.TextView;
-
+import android.widget.Toast;
 import java.util.Objects;
-
-
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -32,6 +36,7 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
         context=this;
 
         Log.d("mainActivity2", "In main2");
@@ -64,9 +69,10 @@ public class Main2Activity extends AppCompatActivity {
         findViewById(R.id.btn_add).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                initiatePopupWindow(v);
             }
         });
+
 
         findViewById(R.id.btnnotify).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,8 +88,7 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
         }
-
-    private View.OnClickListener listen = new View.OnClickListener() {
+       private View.OnClickListener listen = new View.OnClickListener() {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btn_call:
@@ -98,6 +103,31 @@ public class Main2Activity extends AppCompatActivity {
         }
     };
 
+    private void initiatePopupWindow(View v) {
+        try {
+            //We need to get the instance of the LayoutInflater, use the context of this activity
+            LayoutInflater inflater = (LayoutInflater) Main2Activity.this
+                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            //Inflate the view from a predefined XML layout
+            View layout = inflater.inflate(R.layout.popup,
+                    (ViewGroup) findViewById(R.id.popup_element));
+            // create a 300px width and 470px height PopupWindow
+            PopupWindow pw = new PopupWindow(layout, 1000, 1000, true);
+            // display the popup in the center
+            pw.showAtLocation(v, Gravity.CENTER, -10, -10);
+            TextView mName =  layout.findViewById(R.id.popup_name);
+            Button adddetails =  layout.findViewById(R.id.adddetails);
+            adddetails.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(context,"Back Hand Process is running",Toast.LENGTH_SHORT).show();
+                }
+            });
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public void callPerson(final String phoneNumber) {
 
