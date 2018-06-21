@@ -15,13 +15,13 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.RemoteViews;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+
 import java.util.Objects;
 
 public class Main2Activity extends AppCompatActivity {
@@ -37,17 +37,15 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        context=this;
-
         Log.d("mainActivity2", "In main2");
 
+        context=this;
+
         (Objects.requireNonNull(getSupportActionBar())).setDisplayHomeAsUpEnabled(true);
-        Log.d("mainActivity2", "after back button");
+        Log.d("mainActivity2", "after back button || Code is running");
 
         Button btnCall = findViewById(R.id.btn_call);
         btnCall.setOnClickListener(listen);
-
-        Log.d("mainActivity2", "call button");
 
         notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         remoteViews = new RemoteViews(getPackageName(), R.layout.notification);
@@ -87,7 +85,9 @@ public class Main2Activity extends AppCompatActivity {
                 notificationManager.notify(notification_id,builder.build());
             }
         });
-        }
+
+
+    }
        private View.OnClickListener listen = new View.OnClickListener() {
         public void onClick(View v) {
             switch (v.getId()) {
@@ -120,7 +120,7 @@ public class Main2Activity extends AppCompatActivity {
             adddetails.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(context,"Back Hand Process is running",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context,"Backend Process is running",Toast.LENGTH_SHORT).show();
                 }
             });
 
