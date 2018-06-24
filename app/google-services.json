@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "971630871049",
-    "firebase_url": "https://my-app-development-a4fb6.firebaseio.com",
-    "project_id": "my-app-development-a4fb6",
-    "storage_bucket": "my-app-development-a4fb6.appspot.com"
+    "project_number": "189087379615",
+    "firebase_url": "https://yef-blood-donation-app-b1cc3.firebaseio.com",
+    "project_id": "yef-blood-donation-app-b1cc3",
+    "storage_bucket": "yef-blood-donation-app-b1cc3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:971630871049:android:abf12adfa656cf90",
+        "mobilesdk_app_id": "1:189087379615:android:abf12adfa656cf90",
         "android_client_info": {
           "package_name": "com.example.sum.yef"
         }
       },
       "oauth_client": [
         {
-          "client_id": "971630871049-6jb6htbltv036dp6r6aq81ii5qihed3q.apps.googleusercontent.com",
+          "client_id": "189087379615-9lb8g517g6ii7jmgl0b7qp77716k284e.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.sum.yef",
@@ -23,17 +23,13 @@
           }
         },
         {
-          "client_id": "971630871049-eb1ls24bp60lbq4uanhofk7p40ulhi70.apps.googleusercontent.com",
-          "client_type": 3
-        },
-        {
-          "client_id": "971630871049-eb1ls24bp60lbq4uanhofk7p40ulhi70.apps.googleusercontent.com",
+          "client_id": "189087379615-t9g24prn22kus99hcmio5o59d3j6qno4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAXRx4lDhKKIpsuS9B3Qg8qxT3IWfyvDOc"
+          "current_key": "AIzaSyCV7ID-fj2HHWh-1grkHQE5JvfiDIBMBjI"
         }
       ],
       "services": {
@@ -44,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "971630871049-eb1ls24bp60lbq4uanhofk7p40ulhi70.apps.googleusercontent.com",
+              "client_id": "189087379615-t9g24prn22kus99hcmio5o59d3j6qno4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

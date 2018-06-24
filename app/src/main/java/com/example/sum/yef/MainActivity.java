@@ -39,5 +39,14 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("mainActivity", "Going in main Activity 3 about us activity");
             }
         });
+
+
+        findViewById(R.id.profile).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this,FireBaseMainActivity.class);
+                startActivity(i);
+                Log.d("mainActivity", "Going in User Profile activity");
+            }
+        });
     }
 }
