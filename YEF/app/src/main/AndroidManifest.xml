@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sum.yef">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_yef_logo_round"
+        android:label="@string/app_name"
+        android:logo="@mipmap/ic_yef_logo_round"
+        android:roundIcon="@mipmap/ic_yef_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="Donor Information"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main3Activity"
+            android:label="About Us"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+
+        <receiver android:name=".txtlistner">
+            <intent-filter>
+                <action android:name="Reply_Clicked" />
+                <action android:name="Close_Clicked" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".login" />
+        <activity android:name=".FireBaseMainActivity" />
+        <activity android:name=".resetPassword" />
+        <activity android:name=".signUp"></activity>
+    </application>
+
+</manifest>
